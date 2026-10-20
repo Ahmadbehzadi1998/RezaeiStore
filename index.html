@@ -9,28 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{color-scheme:light;--ink:#17251f;--muted:#6c7770;--green:#176b50;--green-dark:#104a39;--gold:#c5a45d;--paper:#f7f8f3;--card:rgba(255,255,255,.78);--line:rgba(28,62,47,.10);--shadow:0 18px 55px rgba(28,54,40,.08)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 8% 0%,rgba(208,228,207,.42),transparent 34rem),radial-gradient(ellipse at 100% 28%,rgba(231,218,183,.26),transparent 30rem),var(--paper);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;min-height:100vh}
-    a{color:inherit;text-decoration:none}.shell{width:min(1160px,calc(100% - 36px));margin-inline:auto}
-    header{padding:22px 0 12px}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border:1px solid rgba(255,255,255,.9);border-radius:22px;background:rgba(255,255,255,.64);backdrop-filter:blur(18px);box-shadow:0 8px 28px rgba(31,61,44,.05)}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.4px}.mark{width:43px;height:43px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#237657,#104735);color:#fff;font-size:21px;box-shadow:0 7px 18px #176b5030}.brand small{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0}
-    .nav-note{font-size:12px;color:var(--muted);padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:#ffffff8c}
-    .hero{padding:64px 0 40px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:36px;animation:rise .7s ease both}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:700;padding:8px 12px;border-radius:999px;background:#e6f0e7;border:1px solid #d5e6d7}.dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
-    h1{font-size:clamp(34px,5vw,61px);line-height:1.28;letter-spacing:-1.5px;margin:20px 0 14px;font-weight:800}h1 span{color:var(--green)}.hero p{color:var(--muted);line-height:2.1;font-size:15px;max-width:560px;margin:0}
-    .hero-art{position:relative;min-height:255px;display:grid;place-items:center;border:1px solid #fff;border-radius:34px;background:linear-gradient(145deg,#eef3e9,#fffdf6);overflow:hidden;box-shadow:var(--shadow)}.orb{position:absolute;width:210px;height:210px;border-radius:50%;background:linear-gradient(145deg,#d9e9d9,#b8d5c2);filter:blur(1px);right:10%;top:8%;opacity:.8}.orb2{position:absolute;width:150px;height:150px;border-radius:50%;background:linear-gradient(145deg,#f4e9c9,#e6d4a6);left:10%;bottom:-25%;opacity:.8}.art-card{position:relative;width:150px;height:180px;border:1px solid #ffffffd9;border-radius:25px;background:#ffffff9c;backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;box-shadow:0 18px 40px #1a4d3520;transform:rotate(-5deg);animation:float 5s ease-in-out infinite}.art-card strong{font-size:16px;color:var(--green-dark)}.art-symbol{font-size:54px;color:var(--gold);line-height:1}.art-card small{font-size:10px;color:var(--muted);letter-spacing:2px;direction:ltr}
-    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:16px 0 22px}.section-title h2{font-size:23px;margin:0 0 5px}.section-title p{font-size:12px;color:var(--muted);margin:0}.search{position:relative;min-width:min(310px,100%)}.search input{width:100%;height:48px;border:1px solid var(--line);border-radius:16px;padding:0 43px 0 15px;background:#ffffffb8;font:inherit;font-size:13px;outline:none;transition:.2s}.search input:focus{border-color:#8ab69d;box-shadow:0 0 0 4px #176b5012}.search svg{position:absolute;right:15px;top:15px;color:var(--muted)}
-    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.filter{border:1px solid var(--line);background:#ffffff8c;color:var(--muted);font:inherit;font-size:12px;padding:9px 14px;border-radius:999px;cursor:pointer;transition:transform .2s,background .2s}.filter:hover{transform:translateY(-2px)}.filter.active{background:var(--green);border-color:var(--green);color:#fff}
-    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding-bottom:65px}.product{min-width:0;border:1px solid #fff;border-radius:23px;background:var(--card);overflow:hidden;box-shadow:0 7px 24px #1c3e2f08;transition:transform .25s,box-shadow .25s;animation:rise .5s ease both}.product:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.poster{aspect-ratio:4/5;background:linear-gradient(145deg,#edf2e9,#f8f3e5);position:relative;overflow:hidden;display:grid;place-items:center}.poster img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .5s}.product:hover .poster img{transform:scale(1.035)}.placeholder{display:flex;flex-direction:column;align-items:center;gap:9px;color:#789080;text-align:center;padding:18px}.placeholder span{font-size:36px}.placeholder small{font-size:11px}.product-info{padding:15px;display:flex;flex-direction:column;height:100%}.product-info h3{font-size:14px;line-height:1.8;margin:0 0 6px;overflow-wrap:anywhere}.product-info p{font-size:11px;color:var(--muted);margin:0;line-height:1.8}.product-tag{display:inline-block;margin-top:12px;background:#e8f1e8;color:var(--green);font-size:10px;padding:5px 9px;border-radius:999px}
-    .order-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:43px;margin-top:14px;padding:10px 12px;border:1px solid #176b5040;border-radius:13px;background:linear-gradient(135deg,#176b50,#104a39);color:#fff;font:inherit;font-size:12px;font-weight:700;text-align:center;box-shadow:0 6px 15px #176b501c;transition:transform .2s,box-shadow .2s}.order-btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px #176b502b}.order-btn:focus-visible{outline:3px solid #c5a45d;outline-offset:3px}.order-btn svg{width:17px;height:17px;flex:none}.product-info .product-tag{align-self:flex-start}
-    .empty{grid-column:1/-1;border:1px dashed #c8d5c9;border-radius:25px;background:#ffffff80;padding:42px 20px;text-align:center}.empty-icon{margin:0 auto 14px;width:58px;height:58px;border-radius:19px;display:grid;place-items:center;background:#e8f1e8;color:var(--green);font-size:26px}.empty h3{margin:0 0 8px;font-size:18px}.empty p{color:var(--muted);font-size:13px;line-height:2;margin:0 auto 18px;max-width:490px}.empty a{display:inline-flex;background:var(--green);color:white;padding:10px 16px;border-radius:12px;font-size:12px;font-weight:700}
-    .notice{display:none;margin:0 0 24px;padding:12px 15px;border-radius:14px;background:#fff2d8;color:#795b1e;font-size:12px}.notice.show{display:block}
-    footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-9px) rotate(-2deg)}}
-    @media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{gap:20px}.hero-art{min-height:220px}}
-    @media(max-width:640px){.shell{width:min(100% - 24px,520px)}header{padding-top:12px}.nav{padding:11px 12px;border-radius:18px}.mark{width:38px;height:38px}.nav-note{font-size:10px;padding:8px 10px}.hero{padding:42px 0 28px;grid-template-columns:1fr;gap:22px}.hero h1{font-size:38px;margin-top:16px}.hero p{font-size:13px}.hero-art{min-height:180px;border-radius:25px}.art-card{width:118px;height:140px}.art-symbol{font-size:40px}.orb{width:155px;height:155px}.orb2{width:120px;height:120px}.toolbar{align-items:stretch;flex-direction:column;margin-top:12px}.section-title h2{font-size:21px}.search{min-width:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;padding-bottom:45px}.product{border-radius:17px}.product-info{padding:11px}.product-info h3{font-size:12px}.order-btn{min-height:41px;padding:9px 6px;font-size:11px;border-radius:11px}.product-info p{font-size:10px}.product-tag{font-size:9px}.filters{gap:6px}.filter{padding:8px 11px;font-size:11px}.empty{padding:32px 14px}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <header><div class="shell"><nav class="nav" aria-label="ناوبری اصلی"><a class="brand" href="./"><span class="mark">ر</span><span>Rezaei Store<small>فروشگاه رضایی</small></span></a><span class="nav-note">مجموعهٔ منتخب محصولات</span></nav></div></header>
@@ -45,54 +24,6 @@
   </section>
 </main>
 <footer><div class="shell footer-inner"><span>© <span id="year"></span> Rezaei Store</span><span>طراحی ساده، تجربه‌ای روان</span></div></footer>
-<script>
-(() => {
-  const grid = document.getElementById('products');
-  const search = document.getElementById('search');
-  const filters = document.getElementById('filters');
-  const count = document.getElementById('count-label');
-  const notice = document.getElementById('notice');
-  let allProducts = [];
-  let activeCategory = 'همه';
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-  function renderFilters() {
-    const categories = ['همه', ...new Set(allProducts.map(p => p.category).filter(Boolean))];
-    filters.innerHTML = categories.map(c => '<button class="filter '+(activeCategory===c?'active':'')+'" type="button" data-category="'+safe(c)+'">'+safe(c)+'</button>').join('');
-    filters.querySelectorAll('button').forEach(button => button.addEventListener('click', () => { activeCategory = button.dataset.category; renderFilters(); renderProducts(); }));
-    filters.hidden = categories.length <= 2;
-  }
-  function renderProducts() {
-    const term = search.value.trim().toLocaleLowerCase();
-    const visible = allProducts.filter(p => {
-      const haystack = [p.nameFa,p.nameEn,p.category,p.description].filter(Boolean).join(' ').toLocaleLowerCase();
-      return (activeCategory==='همه'||p.category===activeCategory) && haystack.includes(term);
-    });
-    count.textContent = allProducts.length ? visible.length+' محصول از '+allProducts.length+' محصول' : 'هنوز محصولی اضافه نشده است';
-    if (!visible.length) {
-      const isEmpty = !allProducts.length;
-      grid.innerHTML = '<div class="empty"><div class="empty-icon">✳</div><h3>'+(isEmpty?'هنوز پوستری بارگذاری نشده است':'محصولی پیدا نشد')+'</h3><p>'+(isEmpty?'برای افزودن محصولات، تصاویر را در پوشهٔ posters در GitHub بارگذاری کنید و سپس اطلاعات آن‌ها را در products.json ثبت کنید. راهنمای کامل در فایل README.md موجود است.':'عبارت جست‌وجو یا دسته‌بندی را تغییر دهید.')+'</p><a href="https://github.com/Ahmadbehzadi1998/RezaeiStore" target="_blank" rel="noopener noreferrer">رفتن به مخزن GitHub</a></div>';
-      return;
-    }
-    grid.innerHTML = visible.map((p,i) => {
-      const productName = p.nameFa || p.nameEn || 'محصول';
-      const orderMessage = 'سلام، برای سفارش این محصول از فروشگاه رضایی راهنمایی می‌خواهم: ' + productName + (p.nameEn && p.nameFa ? ' (' + p.nameEn + ')' : '');
-      const orderUrl = 'https://wa.me/989356315397?text=' + encodeURIComponent(orderMessage);
-      return '<article class="product" style="animation-delay:'+Math.min(i*45,300)+'ms"><div class="poster">'+(p.image?'<img src="'+safe(p.image)+'" alt="'+safe(p.alt||p.nameFa||p.nameEn||'تصویر محصول')+'" loading="lazy" decoding="async" onerror="this.parentElement.innerHTML=\'<div class=&quot;placeholder&quot;><span>▧</span><small>تصویر در دسترس نیست</small></div>\'">':'<div class="placeholder"><span>▧</span><small>تصویر محصول اضافه نشده</small></div>')+'</div><div class="product-info"><h3>'+safe(productName)+'</h3>'+(p.nameEn?'<p dir="ltr" style="text-align:right">'+safe(p.nameEn)+'</p>':'')+(p.description?'<p>'+safe(p.description)+'</p>':'')+(p.category?'<span class="product-tag">'+safe(p.category)+'</span>':'')+'<a class="order-btn" href="'+orderUrl+'" target="_blank" rel="noopener noreferrer" aria-label="سفارش '+safe(productName)+' از طریق واتساپ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.7A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 8.2c.3-.6.6-.6.9-.6h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4 0 .6.5.9 1.3 1.6 2.2 2.1.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .4-.2 1.1-.7 1.5-.5.5-1.2.7-2 .5-1-.2-2.2-.8-3.5-1.9-1.1-1-1.9-2.3-2.1-3.3-.2-.7 0-1.5.3-2Z"/></svg><span>سفارش از واتساپ</span></a></div></article>';
-    }).join('');
-  }
-  search.addEventListener('input',renderProducts);
-  fetch('./products.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('products.json unavailable');return r.json()}).then(data=>{
-    if(!Array.isArray(data))throw new Error('Invalid products format');
-    allProducts=data.filter(p=>p&&typeof p==='object');
-    renderFilters();renderProducts();
-  }).catch(()=>{
-    count.textContent='فهرست محصولات بارگذاری نشد';
-    notice.textContent='فایل products.json در دسترس نیست یا قالب آن معتبر نیست. مخزن GitHub را بررسی کنید.';
-    notice.classList.add('show');
-    grid.innerHTML='<div class="empty"><div class="empty-icon">!</div><h3>بارگذاری فهرست با خطا روبه‌رو شد</h3><p>مطمئن شوید فایل products.json در ریشهٔ پروژه وجود دارد و شامل یک آرایهٔ JSON معتبر است.</p></div>';
-  });
-})();
-</script>
+<script src="/app.js" defer></script>
 </body>
 </html>
