@@ -1,0 +1,10 @@
+[
+  {
+    "nameFa": "نام محصول به فارسی",
+    "nameEn": "Product name in English",
+    "category": "دسته‌بندی",
+    "image": "/posters/example-product.webp",
+    "alt": "توضیح کوتاه تصویر محصول",
+    "description": ""
+  }
+]
