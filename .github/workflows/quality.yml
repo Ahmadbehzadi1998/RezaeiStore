@@ -62,3 +62,17 @@ jobs:
           }
           console.log(`Validated ${products.length} products, poster files, RTL metadata, and security-header configuration.`);
           NODE
+
+      - name: Verify production security headers
+        env:
+          SITE_URL: https://rezaeistore.vercel.app
+        run: |
+          curl --fail --silent --show-error --dump-header response-headers.txt --output /dev/null "$SITE_URL/"
+          for header in content-security-policy strict-transport-security x-content-type-options x-frame-options referrer-policy; do
+            if ! grep -qi "^$header:" response-headers.txt; then
+              echo "Missing production response header: $header"
+              cat response-headers.txt
+              exit 1
+            fi
+          done
+          echo "Production security headers are present."
