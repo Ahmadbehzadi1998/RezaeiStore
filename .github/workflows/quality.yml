@@ -1,0 +1,64 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: node --check app.js
+      - name: Validate catalog and local poster files
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
+          if (!Array.isArray(products) || products.length !== 15) {
+            throw new Error(`Expected 15 products; found ${Array.isArray(products) ? products.length : 'non-array'}`);
+          }
+          const missing = [];
+          for (const [index, product] of products.entries()) {
+            if (!product || typeof product.nameEn !== 'string' || typeof product.nameFa !== 'string') {
+              throw new Error(`Product ${index + 1} is missing a Persian or English name`);
+            }
+            if (!product.image || typeof product.image !== 'string') {
+              missing.push(`Product ${index + 1} (${product.nameEn}): no image path`);
+              continue;
+            }
+            let pathname;
+            try { pathname = decodeURIComponent(new URL(product.image, 'https://local.invalid').pathname).replace(/^\/+/, ''); }
+            catch { missing.push(`Product ${index + 1} (${product.nameEn}): invalid image URL ${product.image}`); continue; }
+            if (!pathname.startsWith('posters/') || !fs.existsSync(path.resolve(pathname))) {
+              missing.push(`Product ${index + 1} (${product.nameEn}): ${pathname} not found`);
+            }
+          }
+          if (missing.length) {
+            console.error('Missing or invalid product images:\n' + missing.join('\n'));
+            process.exit(1);
+          }
+          const html = fs.readFileSync('index.html', 'utf8');
+          for (const required of ['lang="fa"', 'dir="rtl"', 'name="viewport"', '/styles.css', '/app.js']) {
+            if (!html.includes(required)) throw new Error(`index.html missing expected feature: ${required}`);
+          }
+          const vercel = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
+          const headerText = JSON.stringify(vercel.headers || []);
+          for (const header of ['Content-Security-Policy', 'X-Content-Type-Options', 'Referrer-Policy']) {
+            if (!headerText.includes(header)) throw new Error(`vercel.json missing ${header}`);
+          }
+          console.log(`Validated ${products.length} products, poster files, RTL metadata, and security-header configuration.`);
+          NODE
