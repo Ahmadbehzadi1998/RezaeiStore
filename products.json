@@ -3,7 +3,7 @@
     "nameFa": "منتوس آدامس ۱۰۰ گرم",
     "nameEn": "Mentos Gum Pure Fresh Spearmint 100g",
     "category": "آدامس",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/MENTOS%20GUM%20PURE%20FRESH%20SPEARMINT__100g__Pure%20Breath.jpg",
+    "image": "/posters/MENTOS%20GUM%20PURE%20FRESH%20SPEARMINT__100g__Pure%20Breath.jpg",
     "alt": "پوستر آدامس منتوس ۱۰۰ گرم",
     "description": ""
   },
@@ -11,7 +11,7 @@
     "nameFa": "منتوس آدامس ۵۶ گرم",
     "nameEn": "Mentos Gum Pure Fresh Spearmint 56g",
     "category": "آدامس",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/MENTOS%20GUM%20PURE%20FRESH%20SPEARMINT__56g.jpg",
+    "image": "/posters/MENTOS%20GUM%20PURE%20FRESH%20SPEARMINT__56g.jpg",
     "alt": "پوستر آدامس منتوس ۵۶ گرم",
     "description": ""
   },
@@ -19,7 +19,7 @@
     "nameFa": "کافی‌میت ۴۰۰ گرم",
     "nameEn": "Coffee-mate 400g",
     "category": "کافی‌میت",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/Coffemate400g.jpg",
+    "image": "/posters/Coffemate400g.jpg",
     "alt": "پوستر کافی‌میت ۴۰۰ گرم",
     "description": ""
   },
@@ -27,7 +27,7 @@
     "nameFa": "کافی‌میت ۱ کیلوگرم",
     "nameEn": "Coffee-mate 1kg",
     "category": "کافی‌میت",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/Coffeemate1kg.jpg",
+    "image": "/posters/Coffeemate1kg.jpg",
     "alt": "پوستر کافی‌میت یک کیلوگرم",
     "description": ""
   },
@@ -35,7 +35,7 @@
     "nameFa": "جیکوبز مونارک ۱۹۰ گرم",
     "nameEn": "Jacobs Monarch 190g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/JacobsMonarch190g.jpg",
+    "image": "/posters/JacobsMonarch190g.jpg",
     "alt": "پوستر جیکوبز مونارک ۱۹۰ گرم",
     "description": ""
   },
@@ -43,7 +43,7 @@
     "nameFa": "جیکوبز مونارک ۹۵ گرم",
     "nameEn": "Jacobs Monarch 95g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/JacobsMonarch95g.jpg",
+    "image": "/posters/JacobsMonarch95g.jpg",
     "alt": "پوستر جیکوبز مونارک ۹۵ گرم",
     "description": ""
   },
@@ -51,7 +51,7 @@
     "nameFa": "جیکوبز گلد ۱۹۰ گرم",
     "nameEn": "Jacobs Gold 190g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/JacobsGold190g.jpg",
+    "image": "/posters/JacobsGold190g.jpg",
     "alt": "پوستر جیکوبز گلد ۱۹۰ گرم",
     "description": ""
   },
@@ -59,7 +59,7 @@
     "nameFa": "جیکوبز گلد ۹۵ گرم",
     "nameEn": "Jacobs Gold 95g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/JacobsGold95g.jpg",
+    "image": "/posters/JacobsGold95g.jpg",
     "alt": "پوستر جیکوبز گلد ۹۵ گرم",
     "description": ""
   },
@@ -67,7 +67,7 @@
     "nameFa": "جیکوبز مونارک ۴۷٫۵ گرم",
     "nameEn": "Jacobs Monarch 47.5g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/JacobsMonarch47.5g.jpg",
+    "image": "/posters/JacobsMonarch47.5g.jpg",
     "alt": "پوستر جیکوبز مونارک ۴۷٫۵ گرم",
     "description": ""
   },
@@ -75,7 +75,7 @@
     "nameFa": "سس کچاپ هاینز ۹۱۰ گرم",
     "nameEn": "Heinz Tomato Ketchup 910g",
     "category": "سس و چاشنی",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/HEINZ%20TOMATO%20KETCHUP%20910g.jpg",
+    "image": "/posters/HEINZ%20TOMATO%20KETCHUP%20910g.jpg",
     "alt": "پوستر سس کچاپ هاینز ۹۱۰ گرم",
     "description": ""
   },
@@ -83,7 +83,7 @@
     "nameFa": "خردل زرد امریکن گاردن ۸ اونس",
     "nameEn": "American Garden Yellow Mustard 8 oz",
     "category": "سس و چاشنی",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/AMERICAN%20GARDEN%20YELLOW%20MUSTARD__8%20oz.jpg",
+    "image": "/posters/AMERICAN%20GARDEN%20YELLOW%20MUSTARD__8%20oz.jpg",
     "alt": "پوستر خردل زرد امریکن گاردن",
     "description": ""
   },
@@ -91,7 +91,7 @@
     "nameFa": "سس کچاپ هاینز ۲۹۵ گرم",
     "nameEn": "Heinz Tomato Ketchup 295g",
     "category": "سس و چاشنی",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/HEINZ%20TOMATO%20KETCHUP%20295g.jpg",
+    "image": "/posters/HEINZ%20TOMATO%20KETCHUP%20295g.jpg",
     "alt": "پوستر سس کچاپ هاینز ۲۹۵ گرم",
     "description": ""
   },
@@ -99,7 +99,7 @@
     "nameFa": "داویدوف فاین آرما ۱۰۰ گرم",
     "nameEn": "Davidoff Fine Aroma Instant Coffee 100g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/DAVIDOFF%20FINE%20AROMA%20Instant%20Coffee__100g.jpg",
+    "image": "/posters/DAVIDOFF%20FINE%20AROMA%20Instant%20Coffee__100g.jpg",
     "alt": "پوستر قهوه فوری داویدوف فاین آرما ۱۰۰ گرم",
     "description": ""
   },
@@ -107,7 +107,7 @@
     "nameFa": "داویدوف اسپرسو ۵۷، ۱۰۰ گرم",
     "nameEn": "Davidoff Espresso 57 Instant Coffee 100g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/DAVIDOFF%20ESPRESSO%2057%20Instant%20Coffee%20100g.jpg",
+    "image": "/posters/DAVIDOFF%20ESPRESSO%2057%20Instant%20Coffee%20100g.jpg",
     "alt": "پوستر قهوه فوری داویدوف اسپرسو ۵۷، ۱۰۰ گرم",
     "description": ""
   },
@@ -115,7 +115,7 @@
     "nameFa": "داویدوف ریچ آرما ۱۰۰ گرم",
     "nameEn": "Davidoff Rich Aroma Instant Coffee 100g",
     "category": "قهوه",
-    "image": "https://raw.githubusercontent.com/Ahmadbehzadi1998/RezaeiStore/main/posters/DAVIDOFF%20RICH%20AROMA%20Instant%20Coffee%20__100g.jpg",
+    "image": "/posters/DAVIDOFF%20RICH%20AROMA%20Instant%20Coffee__100g.jpg",
     "alt": "پوستر قهوه فوری داویدوف ریچ آرما ۱۰۰ گرم",
     "description": ""
   }
